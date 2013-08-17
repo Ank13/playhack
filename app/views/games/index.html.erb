@@ -1,0 +1,15 @@
+
+<div class="top-section">
+  <h2>Share your game or play one listed below!</h2>
+  <button class='big-button'><%= link_to "Share your game!", new_game_path %></button>
+</div>
+
+<div class="spacer"></div>
+
+<% @games.each do |game| %>
+  <div class="game-description">
+    <h2><%= game.name %>  <span class="likes">likes: <%= game.votes.count %></span></h2>
+    <br>
+    <%= link_to "Read how to play!", game_path(game), class:'regular-button' %>
+  </div>
+<% end %>

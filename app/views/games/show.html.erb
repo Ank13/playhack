@@ -1,0 +1,15 @@
+<div class="game-full-description">
+  <h2><%= @game.name %> </h2><br>
+
+  <h3>Description:</h3> <p> <%= @game.description %> </p>
+  <h3>Equipment:</h3> <p> <%= @game.equipment %> </p>
+  <h3>Likes:</h3> <p> <%= @game.votes.count %>
+
+    <%= form_for @vote, url: game_votes_path(@game) do |f|  %>
+      <%= f.submit "Like", class: "big-button" %>
+    <% end %>
+
+  <%= link_to "Back to big list", :root, class:'regular-button' %>
+</div>
+
+<iframe width="480px" height="480px" src="http://seenive.com/v/980547944136810496/embed?mute=0" frameborder="0"></iframe>

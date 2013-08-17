@@ -1,4 +1,5 @@
-class CreateGames < ActiveRecord::Migration
+class Game < ActiveRecord::Migration
+
   def change
     create_table :games do |t|
       t.string :name
@@ -6,4 +7,5 @@ class CreateGames < ActiveRecord::Migration
       t.timestamps
     end
   end
+
 end

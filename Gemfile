@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# use Postgres for db
+gem 'pg'
+
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:

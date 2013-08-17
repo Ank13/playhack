@@ -1,6 +1,6 @@
 class Game < ActiveRecord::Base
   attr_accessible :name, :description
 
-  has_and_belongs_to_many :equipments
+  has_and_belongs_to_many :gears
 
 end

@@ -6,5 +6,7 @@
   Game.create(name: Faker::Company.name,
               description: Faker::Company.catch_phrase,
               equipment: Faker::Lorem.paragraph,
-              video_url: "https://vine.co/v/bXZre5gtYgT")
+              video_url: "//www.youtube.com/embed/lJ06RKGcPBI")
 end
+
+

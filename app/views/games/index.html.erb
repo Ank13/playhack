@@ -1,10 +1,22 @@
 
 <div class="top-section">
-  <h2>Share your game or play one listed below!</h2>
   <button class='big-button'><%= link_to "Share your game!", new_game_path %></button>
+  <h4><i>Share a game or play one listed below!</i></h4>
 </div>
 
 <div class="spacer"></div>
+
+<div class="sort-buttons">
+  <span class="description">Sort by:</span>
+  <%= link_to "Most Liked", :root, class:'subdued-button' %>
+  <%= link_to "Newest", :root, class:'subdued-button' %>
+  <%= link_to "Outdoor Games", :root, class:'subdued-button' %>
+  <%= link_to "Indoor Games", :root, class:'subdued-button' %>
+  <%= link_to "Ages: 2+", :root, class:'subdued-button' %>
+  <%= link_to "Ages: 5+", :root, class:'subdued-button' %>
+  <%= link_to "Ages: 10+", :root, class:'subdued-button' %>
+  <%= link_to "Ages: 18+", :root, class:'subdued-button' %>
+</div>
 
 <% @games.each do |game| %>
   <div class="game-description">

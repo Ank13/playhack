@@ -1,4 +1,6 @@
-<div class="game-description">
+<div class="game-create">
+  <h2>Tell us about your game!</h2><br>
+
   <%= form_for @game, url: {action: "create"} do |f|  %>
     <%= f.label :name, "What's this game called?" %><br>
     <%= f.text_field :name %> <br>
@@ -8,6 +10,10 @@
 
     <%= f.label :equipment, "What gear do you need?"%><br>
     <%= f.text_field :equipment  %> <br>
+
+  <%= f.label :video_url, "Share link to a short Vine or YouTube of you playing this game"%><br>
+  <%= f.text_field :video_url  %> <br>
+
     <%= f.submit "Share this game!", class: "big-button" %>
   <% end %>
 

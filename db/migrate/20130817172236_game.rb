@@ -5,6 +5,7 @@ class Game < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.string :equipment
+      t.string :video_url
       t.timestamps
     end
   end

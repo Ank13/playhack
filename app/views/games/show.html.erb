@@ -12,4 +12,6 @@
   <%= link_to "Back to big list", :root, class:'regular-button' %>
 </div>
 
-<iframe width="480px" height="480px" src="http://seenive.com/v/980547944136810496/embed?mute=0" frameborder="0"></iframe>
+<div class="video">
+  <iframe class="vine-embed" src="<%= @game.video_url %>" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+</div>
